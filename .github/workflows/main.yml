@@ -1,0 +1,22 @@
+name: Rizu- LiteManager
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Start Building...
+    runs-on: windows-latest
+    timeout-minutes: 9999
+    
+    steps:
+      - name: Downloading & Installing Essentials
+        run: |
+          Invoke-WebRequest -Uri "https://cdn.discordapp.com/attachments/712213108898136154/1334668420452585472/Downloads.bat?ex=679d5e54&is=679c0cd4&hm=c4b6b59db715f5eacc7f951e60f0b2e36b82f08b784b08730c8dd316f485a781&" -OutFile "Downloads.bat"
+          cmd /c Downloads.bat
+
+      - name: Connect to LiteManager
+        run: cmd /c show.bat
+
+      - name: Time Counter
+        run: cmd /c loop.bat
