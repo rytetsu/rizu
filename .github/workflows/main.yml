@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://cdn.discordapp.com/attachments/712213108898136154/1334672856281382992/Downloads.bat?ex=679d6275&is=679c10f5&hm=1cbc361bb9a96acf57d01cec2f1df60da81c25d6598d7c97dbc1e8fd65864f5c&" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://cdn.discordapp.com/attachments/712213108898136154/1334674855509098558/Downloads.bat?ex=679d6452&is=679c12d2&hm=b1f060a449d1cf79613da37b2faced529b53b2eb2f428d6f65d05772416d5dbe&" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Connect to LiteManager
